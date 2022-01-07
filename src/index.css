@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
+  user-select: none;
 }
 
 body {
@@ -20,4 +21,19 @@ h1,h2,h3{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #30333a;
+  border-radius: 4px;
+
+}
+
+::-webkit-scrollbar-track{
+  background: #282c34;
+}
+
+::-webkit-scrollbar{
+  background: cadetblue;
+  width: .5em;
 }
