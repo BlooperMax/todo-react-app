@@ -6,7 +6,7 @@ export const TodoItem = ({item,items,setItems})=>{
   const {title,date,check} = item;
   const {year,month,day,hour,minute} = DateTime.fromMillis(date).toObject();
 
-  const minuteConvertion = (`${minute}`.length) == 1 ? `0${minute}` : minute;
+  const minuteConvertion = (`${minute}`.length) === 1 ? `0${minute}` : minute;
 
   const handleItemCheck = () => {
 
